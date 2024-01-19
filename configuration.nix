@@ -94,7 +94,7 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
-	geany android-tools brave vim vifm unrar unzip firefox qbittorrent discord betterdiscord-installer telegram-desktop 
+	btop nmap bat sxiv mpv geany android-tools brave vim vifm unrar unzip firefox qbittorrent discord betterdiscord-installer telegram-desktop 
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
