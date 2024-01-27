@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./packages.nix
     ];
 
 
@@ -101,20 +102,13 @@
     description = "Tibor";
     extraGroups = ["power" "networkmanager" "wheel" ];
     packages = with pkgs; [
-      #firefox
+      firefox
     #  thunderbird
     ];
-  };1
+  };
   
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-
-  environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-   # wget
-	 qbittorrent discord telegram-desktop android-tools mpv sxiv bat lshw  xfce.xfce4-pulseaudio-plugin btop nmap bat sxiv mpv brave  unrar unzip firefox
-  
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
